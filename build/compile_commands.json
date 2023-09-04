@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/djf/sourcecode/MyConnectionPool/build",
+  "command": "/usr/bin/g++  -I/home/djf/sourcecode/MyConnectionPool/src -I/home/djf/sourcecode/MyConnectionPool/thirdparty -g -o CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o -c /home/djf/sourcecode/MyConnectionPool/src/ConnectionPool.cc",
+  "file": "/home/djf/sourcecode/MyConnectionPool/src/ConnectionPool.cc"
+},
+{
+  "directory": "/home/djf/sourcecode/MyConnectionPool/build",
+  "command": "/usr/bin/g++  -I/home/djf/sourcecode/MyConnectionPool/src -I/home/djf/sourcecode/MyConnectionPool/thirdparty -g -o CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o -c /home/djf/sourcecode/MyConnectionPool/src/MysqlConn.cc",
+  "file": "/home/djf/sourcecode/MyConnectionPool/src/MysqlConn.cc"
+},
+{
+  "directory": "/home/djf/sourcecode/MyConnectionPool/build",
+  "command": "/usr/bin/g++  -I/home/djf/sourcecode/MyConnectionPool/src -I/home/djf/sourcecode/MyConnectionPool/thirdparty -g -o CMakeFiles/ConnectionPool.dir/src/main.cpp.o -c /home/djf/sourcecode/MyConnectionPool/src/main.cpp",
+  "file": "/home/djf/sourcecode/MyConnectionPool/src/main.cpp"
+}
+]
