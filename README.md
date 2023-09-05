@@ -1,4 +1,3 @@
-
 # Mysql-ConnectionPool
 
 ## 项目背景
@@ -445,6 +444,7 @@ void ConnectionPool::addConnection()
     conn->connect(user_, passwd_, dbName_, ip_, port_);
     conn->refreshAliveTime();    // 刷新起始的空闲时间点
     connectionQueue_.push(conn); // 记录新连接
+    connectionCnt_++;
 }
 ```
 
@@ -455,28 +455,28 @@ void ConnectionPool::addConnection()
 1. 当数据库连接池的连接数目不够的时候，需要有一个线程在后台默默的创建新的连接。
 2. 我们还需要有一个线程可以回收数据库连接
 
-produceConnection() 当数据库连接的数量大于等于最小连接数的时候，我们是不需要创建新连接。这个时候 producer 线程就会被阻塞。否则调用 addConnection() 创建新的数据库连接，并唤醒所有被阻塞的线程。
+produceConnection() 当数据库连接池队列不空的时候，我们是不需要创建新连接的，这个时候producer线程就会被阻塞；当数据库连接池队列为空的时候，需要创建新连接，并唤醒所有被阻塞的线程。
 
 ```cpp
 void ConnectionPool::produceConnection()
 {
     while (true)
     {
-        // RALL手法封装的互斥锁，初始化即加锁，析构即解锁
-        std::unique_lock<std::mutex> locker(mutex_);
-        while (connectionQueue_.size() >= minSize_)
+        std::unique_lock<std::mutex> lock(mutex_);
+        while (!connectionQue_.empty()) // 队列不空，此处生产线程进入等待状态
         {
-            cond_.wait(locker);
-        } 
-        // 如果可用连接数不大于维持的最小连接数，我们就需要创建新的连接
-        addConnection();
-        // 唤醒被阻塞的线程
+            cond_.wait(lock);
+        }
+        if (connectionCnt_ < maxSize_) // 连接数量没有到达上限，继续创建新的连接
+        {
+            addConnection();
+        }
         cond_.notify_all();
     }
 }
 ```
 
-recycleConnection() 在后台周期性的做检测工作，每 500 毫秒检测一次数据库连接池中所维持连接的数量，如果超过了最大的连接数则要判断连接池队列里各个连接的存活时间，如果存活时间超过限制则销毁改连接。
+recycleConnection() 在后台周期性的做检测工作，每 `maxIdleTime_`毫秒检测一次数据库连接池中所维持连接的数量，如果超过了初始连接数则要判断连接池队列里各个连接的存活时间，如果存活时间超过限制则销毁改连接。
 
 ```cpp
 // 销毁多余的数据库连接
@@ -484,21 +484,19 @@ void ConnectionPool::recycleConnection()
 {
     while (true)
     {
-        // 周期性的做检测工作，每500毫秒（0.5s）执行一次
-        std::this_thread::sleep_for(std::chrono::microseconds(500));
-        std::lock_guard<std::mutex> locker(mutex_);
-        while (connectionQueue_.size() > minSize_)
+        std::this_thread::sleep_for(std::chrono::milliseconds(maxIdleTime_));
+        std::unique_lock<std::mutex> lock(mutex_);
+        while (connectionCnt_ > initSize_)
         {
-            MysqlConn* conn = connectionQueue_.front();
+            MysqlConn *conn = connectionQue_.front();
             if (conn->getAliveTime() >= maxIdleTime_)
             {
-                // 存在时间超过设定值则销毁
-                connectionQueue_.pop();
+                connectionQue_.pop();
+                connectionCnt_--;
                 delete conn;
             }
             else
             {
-                // 按照先进先出顺序，前面的没有超过后面的肯定也没有
                 break;
             }
         }
