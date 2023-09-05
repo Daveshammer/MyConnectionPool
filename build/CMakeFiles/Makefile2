@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/djf/sourcecode/MyConnectionPool
+CMAKE_SOURCE_DIR = /home/djf/MyConnectionPool
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/djf/sourcecode/MyConnectionPool/build
+CMAKE_BINARY_DIR = /home/djf/MyConnectionPool/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/ConnectionPool.dir/clean
 CMakeFiles/ConnectionPool.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConnectionPool.dir/build.make CMakeFiles/ConnectionPool.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConnectionPool.dir/build.make CMakeFiles/ConnectionPool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/djf/sourcecode/MyConnectionPool/build/CMakeFiles --progress-num=1,2,3,4 "Built target ConnectionPool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/djf/MyConnectionPool/build/CMakeFiles --progress-num=1,2,3,4 "Built target ConnectionPool"
 .PHONY : CMakeFiles/ConnectionPool.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ConnectionPool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/djf/sourcecode/MyConnectionPool/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/djf/MyConnectionPool/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ConnectionPool.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/djf/sourcecode/MyConnectionPool/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/djf/MyConnectionPool/build/CMakeFiles 0
 .PHONY : CMakeFiles/ConnectionPool.dir/rule
 
 # Convenience name for target.

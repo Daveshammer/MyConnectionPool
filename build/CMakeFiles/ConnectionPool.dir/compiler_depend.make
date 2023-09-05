@@ -273,6 +273,7 @@ CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o: ../src/ConnectionPool.cc 
   /usr/include/c++/8/mutex \
   /usr/include/c++/8/bits/std_mutex.h \
   /usr/include/c++/8/condition_variable \
+  /usr/include/c++/8/atomic \
   /usr/include/c++/8/fstream \
   /usr/include/c++/8/bits/codecvt.h \
   /usr/include/c++/8/x86_64-redhat-linux/bits/basic_file.h \
@@ -739,7 +740,8 @@ CMakeFiles/ConnectionPool.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/8/bits/stl_queue.h \
   /usr/include/c++/8/mutex \
   /usr/include/c++/8/bits/std_mutex.h \
-  /usr/include/c++/8/condition_variable
+  /usr/include/c++/8/condition_variable \
+  /usr/include/c++/8/atomic
 
 
 /usr/include/c++/8/condition_variable:
@@ -1193,6 +1195,8 @@ CMakeFiles/ConnectionPool.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/sys/select.h:
 
 /usr/include/bits/thread-shared-types.h:
+
+/usr/include/c++/8/atomic:
 
 /usr/include/bits/setjmp.h:
 

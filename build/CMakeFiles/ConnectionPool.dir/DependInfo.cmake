@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/djf/sourcecode/MyConnectionPool/src/ConnectionPool.cc" "CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o" "gcc" "CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o.d"
-  "/home/djf/sourcecode/MyConnectionPool/src/MysqlConn.cc" "CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o" "gcc" "CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o.d"
-  "/home/djf/sourcecode/MyConnectionPool/src/main.cpp" "CMakeFiles/ConnectionPool.dir/src/main.cpp.o" "gcc" "CMakeFiles/ConnectionPool.dir/src/main.cpp.o.d"
+  "/home/djf/MyConnectionPool/src/ConnectionPool.cc" "CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o" "gcc" "CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o.d"
+  "/home/djf/MyConnectionPool/src/MysqlConn.cc" "CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o" "gcc" "CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o.d"
+  "/home/djf/MyConnectionPool/src/main.cpp" "CMakeFiles/ConnectionPool.dir/src/main.cpp.o" "gcc" "CMakeFiles/ConnectionPool.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.

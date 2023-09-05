@@ -1,8 +1,6 @@
 CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o: \
- /home/djf/sourcecode/MyConnectionPool/src/MysqlConn.cc \
- /usr/include/stdc-predef.h \
- /home/djf/sourcecode/MyConnectionPool/src/MysqlConn.h \
- /usr/include/c++/8/iostream \
+ /home/djf/MyConnectionPool/src/MysqlConn.cc /usr/include/stdc-predef.h \
+ /home/djf/MyConnectionPool/src/MysqlConn.h /usr/include/c++/8/iostream \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/8/x86_64-redhat-linux/bits/os_defines.h \

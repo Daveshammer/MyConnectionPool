@@ -1,4 +1,4 @@
-# Install script for directory: /home/djf/sourcecode/MyConnectionPool
+# Install script for directory: /home/djf/MyConnectionPool
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/djf/sourcecode/MyConnectionPool/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/djf/MyConnectionPool/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

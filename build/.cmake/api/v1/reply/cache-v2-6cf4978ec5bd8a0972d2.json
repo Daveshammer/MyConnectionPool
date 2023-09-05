@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/djf/sourcecode/MyConnectionPool/build"
+			"value" : "/home/djf/MyConnectionPool/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -155,10 +155,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/g++"
 		},
 		{
@@ -283,10 +283,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/gcc"
 		},
 		{
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/djf/sourcecode/MyConnectionPool"
+			"value" : "/home/djf/MyConnectionPool"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1139,7 +1139,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/djf/sourcecode/MyConnectionPool/build"
+			"value" : "/home/djf/MyConnectionPool/build"
 		},
 		{
 			"name" : "ConnectionPool_SOURCE_DIR",
@@ -1151,7 +1151,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/djf/sourcecode/MyConnectionPool"
+			"value" : "/home/djf/MyConnectionPool"
 		}
 	],
 	"kind" : "cache",

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/djf/sourcecode/MyConnectionPool/src -I/home/djf/sourcecode/MyConnectionPool/thirdparty
+CXX_INCLUDES = -I/home/djf/MyConnectionPool/src -I/home/djf/MyConnectionPool/thirdparty
 
 CXX_FLAGS = -g
 

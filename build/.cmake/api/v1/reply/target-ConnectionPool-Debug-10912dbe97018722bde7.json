@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/djf/sourcecode/MyConnectionPool/bin/ConnectionPool"
+			"path" : "/home/djf/MyConnectionPool/bin/ConnectionPool"
 		}
 	],
 	"backtrace" : 1,
@@ -62,11 +62,11 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/djf/sourcecode/MyConnectionPool/src"
+					"path" : "/home/djf/MyConnectionPool/src"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/home/djf/sourcecode/MyConnectionPool/thirdparty"
+					"path" : "/home/djf/MyConnectionPool/thirdparty"
 				}
 			],
 			"language" : "CXX",

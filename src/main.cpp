@@ -35,7 +35,7 @@ void test1()
 {
     steady_clock::time_point begin = steady_clock::now();
     // op1(0, 5000);
-    op1(0, 5);
+    op1(0, 50);
     steady_clock::time_point end = steady_clock::now();
     auto length = end - begin;
     cout << "非连接池, 单线程, 用时: " << length.count() << " 纳秒, "
@@ -47,10 +47,10 @@ void test2()
 {
     steady_clock::time_point begin = steady_clock::now();
     // op1(0, 5000);
-    op2(0, 5);
+    op2(0, 50);
     steady_clock::time_point end = steady_clock::now();
     auto length = end - begin;
-    cout << "非连接池, 单线程, 用时: " << length.count() << " 纳秒, "
+    cout << "连接池, 单线程, 用时: " << length.count() << " 纳秒, "
         << length.count() / 1000000 << " 毫秒" << endl;
 }
 
@@ -115,13 +115,13 @@ int query()
 int main()
 {
     // 非连接池，单线程
-    // test1();
+    test1();
     // 连接池，单线程
-    // test2();
+    test2();
     // 非连接池，多线程
-    test3();
+    // test3();
     // 连接池，多线程
-    test4();
+    // test4();
 
     return 0;
 }

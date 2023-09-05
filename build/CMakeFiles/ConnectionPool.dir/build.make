@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/djf/sourcecode/MyConnectionPool
+CMAKE_SOURCE_DIR = /home/djf/MyConnectionPool
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/djf/sourcecode/MyConnectionPool/build
+CMAKE_BINARY_DIR = /home/djf/MyConnectionPool/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ConnectionPool.dir/depend.make
@@ -72,44 +72,44 @@ include CMakeFiles/ConnectionPool.dir/flags.make
 CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o: CMakeFiles/ConnectionPool.dir/flags.make
 CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o: ../src/ConnectionPool.cc
 CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o: CMakeFiles/ConnectionPool.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/djf/sourcecode/MyConnectionPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o -MF CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o.d -o CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o -c /home/djf/sourcecode/MyConnectionPool/src/ConnectionPool.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/djf/MyConnectionPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o -MF CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o.d -o CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.o -c /home/djf/MyConnectionPool/src/ConnectionPool.cc
 
 CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/djf/sourcecode/MyConnectionPool/src/ConnectionPool.cc > CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/djf/MyConnectionPool/src/ConnectionPool.cc > CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.i
 
 CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/djf/sourcecode/MyConnectionPool/src/ConnectionPool.cc -o CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/djf/MyConnectionPool/src/ConnectionPool.cc -o CMakeFiles/ConnectionPool.dir/src/ConnectionPool.cc.s
 
 CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o: CMakeFiles/ConnectionPool.dir/flags.make
 CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o: ../src/MysqlConn.cc
 CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o: CMakeFiles/ConnectionPool.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/djf/sourcecode/MyConnectionPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o -MF CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o.d -o CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o -c /home/djf/sourcecode/MyConnectionPool/src/MysqlConn.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/djf/MyConnectionPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o -MF CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o.d -o CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.o -c /home/djf/MyConnectionPool/src/MysqlConn.cc
 
 CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/djf/sourcecode/MyConnectionPool/src/MysqlConn.cc > CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/djf/MyConnectionPool/src/MysqlConn.cc > CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.i
 
 CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/djf/sourcecode/MyConnectionPool/src/MysqlConn.cc -o CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/djf/MyConnectionPool/src/MysqlConn.cc -o CMakeFiles/ConnectionPool.dir/src/MysqlConn.cc.s
 
 CMakeFiles/ConnectionPool.dir/src/main.cpp.o: CMakeFiles/ConnectionPool.dir/flags.make
 CMakeFiles/ConnectionPool.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/ConnectionPool.dir/src/main.cpp.o: CMakeFiles/ConnectionPool.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/djf/sourcecode/MyConnectionPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ConnectionPool.dir/src/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConnectionPool.dir/src/main.cpp.o -MF CMakeFiles/ConnectionPool.dir/src/main.cpp.o.d -o CMakeFiles/ConnectionPool.dir/src/main.cpp.o -c /home/djf/sourcecode/MyConnectionPool/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/djf/MyConnectionPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ConnectionPool.dir/src/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConnectionPool.dir/src/main.cpp.o -MF CMakeFiles/ConnectionPool.dir/src/main.cpp.o.d -o CMakeFiles/ConnectionPool.dir/src/main.cpp.o -c /home/djf/MyConnectionPool/src/main.cpp
 
 CMakeFiles/ConnectionPool.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ConnectionPool.dir/src/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/djf/sourcecode/MyConnectionPool/src/main.cpp > CMakeFiles/ConnectionPool.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/djf/MyConnectionPool/src/main.cpp > CMakeFiles/ConnectionPool.dir/src/main.cpp.i
 
 CMakeFiles/ConnectionPool.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ConnectionPool.dir/src/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/djf/sourcecode/MyConnectionPool/src/main.cpp -o CMakeFiles/ConnectionPool.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/djf/MyConnectionPool/src/main.cpp -o CMakeFiles/ConnectionPool.dir/src/main.cpp.s
 
 # Object files for target ConnectionPool
 ConnectionPool_OBJECTS = \
@@ -125,7 +125,7 @@ ConnectionPool_EXTERNAL_OBJECTS =
 ../bin/ConnectionPool: CMakeFiles/ConnectionPool.dir/src/main.cpp.o
 ../bin/ConnectionPool: CMakeFiles/ConnectionPool.dir/build.make
 ../bin/ConnectionPool: CMakeFiles/ConnectionPool.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/djf/sourcecode/MyConnectionPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/ConnectionPool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/djf/MyConnectionPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/ConnectionPool"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ConnectionPool.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -137,6 +137,6 @@ CMakeFiles/ConnectionPool.dir/clean:
 .PHONY : CMakeFiles/ConnectionPool.dir/clean
 
 CMakeFiles/ConnectionPool.dir/depend:
-	cd /home/djf/sourcecode/MyConnectionPool/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/djf/sourcecode/MyConnectionPool /home/djf/sourcecode/MyConnectionPool /home/djf/sourcecode/MyConnectionPool/build /home/djf/sourcecode/MyConnectionPool/build /home/djf/sourcecode/MyConnectionPool/build/CMakeFiles/ConnectionPool.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/djf/MyConnectionPool/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/djf/MyConnectionPool /home/djf/MyConnectionPool /home/djf/MyConnectionPool/build /home/djf/MyConnectionPool/build /home/djf/MyConnectionPool/build/CMakeFiles/ConnectionPool.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ConnectionPool.dir/depend
 

@@ -38,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ConnectionPool::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ConnectionPool-Debug-66d20a8fe6ff4f0630a4.json",
+					"jsonFile" : "target-ConnectionPool-Debug-10912dbe97018722bde7.json",
 					"name" : "ConnectionPool",
 					"projectIndex" : 0
 				}
@@ -48,8 +48,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/djf/sourcecode/MyConnectionPool/build",
-		"source" : "/home/djf/sourcecode/MyConnectionPool"
+		"build" : "/home/djf/MyConnectionPool/build",
+		"source" : "/home/djf/MyConnectionPool"
 	},
 	"version" : 
 	{
